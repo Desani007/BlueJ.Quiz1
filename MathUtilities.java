@@ -29,7 +29,7 @@ public class MathUtilities{
    * @return the half of the number in double
    */
   public Double half(Integer number) {
-      return null;
+      return number/2.0;
   }
 
   /**
@@ -48,7 +48,7 @@ public class MathUtilities{
    * @return the result of the number multiply by itself
    */
   public Integer square(Integer number) {
-      return null;
+      return  number*number;
   }
 
 }
