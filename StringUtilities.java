@@ -50,8 +50,20 @@ public class StringUtilities {
      * @return `value` with char of value `charToRemove` removed
      */
     public String removeCharacter(String value, Character charToRemove) {
-        return null;
-    }
+                String please ="";
+
+         String [] words = value.split("");
+       
+        for(String m: words){
+            
+ 
+  if (!String.valueOf(charToRemove).equals(m)){
+      please+=m;
+         
+       
+    } else;
+} return please;
+}
 
     /**
      * @param sentence String delimited by spaces representative of a sentence
@@ -59,7 +71,7 @@ public class StringUtilities {
      */
     public String getLastWord(String sentence) {
         String please ="";
-        int w=0; int i=0;  
+        int w=0;   
         String [] words = sentence.split(" ");
         int length = words.length;
         
@@ -73,8 +85,6 @@ public class StringUtilities {
         }
     }
     
-    
-
 
         return please;
     
