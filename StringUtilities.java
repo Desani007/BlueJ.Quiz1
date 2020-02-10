@@ -59,16 +59,24 @@ public class StringUtilities {
      */
     public String getLastWord(String sentence) {
         String please ="";
-        int w=0;
+        int w=0; int i=0;  
         String [] words = sentence.split(" ");
-       
-    for (  int i=0; i<words.length; i++){
+        int length = words.length;
         
-        w=w+1;
-        String jesus= String.valueOf(words.charAt(i));
        
-    }
         
-        return  ;
+        for(String m: words){
+      w=w+1;
+      
+    if ( w==length){
+         please+= m;
+        }
     }
+    
+    
+
+
+        return please;
+    
+}
 }
