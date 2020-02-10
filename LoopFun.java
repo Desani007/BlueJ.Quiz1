@@ -1,4 +1,4 @@
- 
+  
 
 public class LoopFun
 {
@@ -10,7 +10,14 @@ public class LoopFun
        * @return the factorial of the number
        */
       public Integer factorial(Integer number){
-          return null;
+           int num = 1;
+
+        for (int i = number; i > 0; i--) {
+            num = num * i;
+        }
+        return num;
+            
+           
       }
 
       /**
@@ -21,9 +28,30 @@ public class LoopFun
        * @return Upper case string of the first letter of each word
        */
       public String acronym(String phrase) {
-          return null;
-      }
+          String damn= "";
+          String slim="";
+          String uppperCase= "ABCEFGHIJKLMNOPQRSTUVWXYZabcdefghicklm";
+          for ( int i=0; i<phrase.length();i++){
+       String s= String.valueOf(phrase.charAt(i));
+           for ( int j=0; j<uppperCase.length();j++){
+              slim = String.valueOf(uppperCase.charAt(j));
+                if (s.equals(slim)){
+                   damn+= s;
+                   
+            }
+          
+            
+        }
 
+    }    return damn;
+}
+
+
+               
+                    
+            
+            
+    
       /**
        * To prevent anyone from reading our messages, we can encrypt it so it will only be readable by its
        * intended audience. This method encrypt the message by shifting the letter by 3 characters. If the character is
