@@ -29,21 +29,23 @@ public class LoopFun
        */
       public String acronym(String phrase) {
           String damn= "";
-          String slim="";
-          String uppperCase= "ABCEFGHIJKLMNOPQRSTUVWXYZabcdefghicklm";
-          for ( int i=0; i<phrase.length();i++){
-       String s= String.valueOf(phrase.charAt(i));
-           for ( int j=0; j<uppperCase.length();j++){
-              slim = String.valueOf(uppperCase.charAt(j));
-                if (s.equals(slim)){
-                   damn+= s;
+          String f="";
+        String [] word = phrase.split(" ");
+     int i=0;
+     int j=0;
+ for(String m: word){
+      i++;
+      damn+= m.substring(0,1).toUpperCase();
+    }
+ 
+    
                    
-            }
+            
           
             
-        }
+        
 
-    }    return damn;
+        return damn;
 }
 
 
