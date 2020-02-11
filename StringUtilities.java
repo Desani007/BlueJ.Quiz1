@@ -37,11 +37,27 @@ public class StringUtilities {
      * @return middle character of `word`
      */
     public Character getMiddleCharacter(String word) {
-        String [] words = word.split(" ");
+        String please="";
+        char why='\0';
+        
+        String [] letters = word.split("");
+       int length = letters.length;
+       int i=0;
+         for(String m: letters){
+             i=i+1;
+       int num =(length+1)/2;
+       if (i==num){
+           
+  
+       please= m;
+        why=please.charAt(0);
+    }
+    
+    }
         
         
         
-        return null;
+        return why;
     }
 
     /**
